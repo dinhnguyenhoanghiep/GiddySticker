@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/color3"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/im_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_back" />
+
+            <com.giddy.image.giddysticker.custom.TextViewCustomFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/im_save"
+                android:layout_toRightOf="@+id/im_back"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/add_sticker"
+                android:textColor="@android:color/white"
+                android:textSize="26sp" />
+
+
+            <ImageView
+                android:id="@+id/im_save"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_done" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ln_setText"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edt_text"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Nhập chữ"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <Button
+                android:id="@+id/bt_ok"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="OK"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/canvasView"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/img_crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon"
+                android:scaleType="fitCenter" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ln_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.giddy.image.giddysticker.custom.TextViewCustomFont
+                        android:id="@+id/bt_quit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/close"/>
+
+                </TableRow>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_sticker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@color/color3"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/color3">
+
+                <ImageView
+                    android:id="@+id/iv_b"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@raw/b_43" />
+
+                <ImageView
+                    android:id="@+id/iv_d"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@raw/d_56" />
+
+                <ImageView
+                    android:id="@+id/iv_a"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@raw/a_34" />
+
+
+                <ImageView
+                    android:id="@+id/iv_c"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@raw/c_14" />
+
+
+                <ImageView
+                    android:id="@+id/iv_e"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@raw/e_112" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color1">
+
+                <ImageView
+                    android:id="@+id/iv_underline1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FF6E40"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_underline2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FF6E40"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_underline3"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FF6E40"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_underline4"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FF6E40"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_underline5"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FF6E40"
+                    android:visibility="invisible" />
+
+            </TableRow>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Giddy Sticker</string>
+    <string name="set_as_wallpaper">Set as wallpaper</string>
+    <string name="share">Share</string>
+    <string name="wallpaper_success">Set wallpaper success</string>
+    <string name="wallpaper_failed">Cannot set image as wallpaper</string>
+    <string name="sharing_failed">Sharing failed</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="permission_type">You need permission to use the Camera and read the Gallery. Click ACCEPT to grant permission, press CANCEL to exit the application.</string>
+    <string name="accept">ACCEPT</string>
+    <string name="cancel">CANCEL</string>
+    <string name="save_success">Save successfully</string>
+    <string name="save_unsuccess">Save failed</string>
+    <string name="close">Close</string>
+    <string name="add_sticker">Add sticker</string>
+</resources>
